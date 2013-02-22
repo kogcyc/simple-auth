@@ -22,11 +22,11 @@ Rails 3.2.11
  - then a scaffold mini-blog so that we can have something to authorize for
  - then a sessions controller
 
-rails new simple-auth
-cd simple-auth/
-rails generate scaffold Post title:string content:text
-rake db:migrate
-rails g controller sessions
+    rails new simple-auth
+    cd simple-auth/
+    rails generate scaffold Post title:string content:text
+    rake db:migrate
+    rails g controller sessions
 
 Next we will add to the application controller and the sessions controller and then
 make a slight modification to the posts controller.
@@ -89,7 +89,7 @@ end
 
 ####4) posts_controller.rb
 
-The posts controller need only -one- modification:
+The posts controller needs only <b>one</b> modification:
 
 Add the before_filter to the top of the controller as shown.  This has the effect of requiring authorization for all of the methods in this controller with the exception of the index and show methods (which are OK for public consumption).
 
