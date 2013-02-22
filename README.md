@@ -22,13 +22,12 @@ Rails 3.2.11
  - then a scaffold mini-blog so that we can have something to authorize for
  - then a sessions controller
 
-```bash    
-$rails new simple-auth
-$cd simple-auth/
-$rails generate scaffold Post title:string content:text
-$rake db:migrate
-$rails g controller sessions
-```
+
+    rails new simple-auth
+    cd simple-auth/
+    rails generate scaffold Post title:string content:text
+    rake db:migrate
+    rails g controller sessions
 
 Next we will add to the application controller and the sessions controller and then
 make a slight modification to the posts controller.
