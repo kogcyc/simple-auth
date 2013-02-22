@@ -19,9 +19,10 @@ Rails 3.2.11
 
 ####1) To start:
  - we create an app
- - then a scaffold mini-blog so that we can have something to authorize for
- - then a sessions controller
+ - then create a scaffolded mini-blog so that we can have some methods to test authorization against
+ - then create a sessions controller
 
+as follows:
 
     rails new simple-auth
     cd simple-auth/
