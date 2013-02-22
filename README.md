@@ -37,9 +37,9 @@ make a slight modification to the posts controller.
 
 This is the application controller where the actual authorization happens.
 
-[NOTE: you can replace the hard coded password with on that is set comes from an ENVironment variable as shown. For 
-this example we called it DIGEST, but you can name it whatever you like.  And then be sure to set that variable before
-running Rails: $export DIGEST=my-super-secret-password]
+[NOTE: you can replace the hard coded password with one that comes from an ENVironment variable as shown. For 
+this example we called it DIGEST.  And then be sure to set that variable before
+running Rails, for example: $export DIGEST=my-super-secret-password]
 
 ```ruby
 class ApplicationController < ActionController::Base
